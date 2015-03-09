@@ -41,5 +41,7 @@ HEADERS += ../../qmlcomponents/src/application.h \
 RESOURCES += $$RCC_DIR/main.qrc
 
 OTHER_FILES += resource/main.qml \
+               ../../qmlcomponents/views/PersistentGridView.qml \
+               ../../qmlcomponents/views/PersistentGridViewItem.qml \
                prebuild.sh
 
