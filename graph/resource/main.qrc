@@ -1,5 +1,11 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>../../../qmlcomponents/views/PersistentGraphView.qml</file>
+        <file>../../../qmlcomponents/common/utils.js</file>
+        <file>../../../qmlcomponents/storage/SqlTableModel.qml</file>
+        <file>../../../qmlcomponents/storage/Storage.qml</file>
+        <file>../../../qmlcomponents/views/Persistence.qml</file>
+        <file>../../../qmlcomponents/views/Graph.qml</file>
     </qresource>
 </RCC>
