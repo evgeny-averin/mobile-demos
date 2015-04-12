@@ -6,6 +6,6 @@
         <file>../../../qmlcomponents/storage/SqlTableModel.qml</file>
         <file>../../../qmlcomponents/storage/Storage.qml</file>
         <file>../../../qmlcomponents/views/Persistence.qml</file>
-        <file>../../../qmlcomponents/views/Graph.qml</file>
+        <file>../../../qmlcomponents/common/Range.qml</file>
     </qresource>
 </RCC>

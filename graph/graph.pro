@@ -19,7 +19,7 @@ ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 # Additional import path used to resolve QML modules in Creator's code model
 QML_IMPORT_PATH =
 
-QMAKE_CXXFLAGS += -std=c++1y
+QMAKE_CXXFLAGS += -std=c++1y -Werror
 
 CONFIG(debug, debug|release) {
     QMAKE_CXXFLAGS += -DDEVELOPER_BUILD
@@ -32,15 +32,27 @@ INCLUDEPATH += ../../qmlcomponents/src \
                ../../qmlcomponents/src/box2d
 
 SOURCES += src/main.cpp \
+           ../../qmlcomponents/src/graph/graph.cpp \
+           ../../qmlcomponents/src/graph/gridnode.cpp \
+           ../../qmlcomponents/src/graph/linenode.cpp \
+           ../../qmlcomponents/src/graph/noisynode.cpp \
+
 
 HEADERS += ../../qmlcomponents/src/application.h \
            ../../qmlcomponents/src/convenience.h \
            ../../qmlcomponents/src/fileio.h \
-           ../../qmlcomponents/src/runnable.h
+           ../../qmlcomponents/src/runnable.h \
+           ../../qmlcomponents/src/graph/graph.h \
+           ../../qmlcomponents/src/graph/gridnode.h \
+           ../../qmlcomponents/src/graph/linenode.h \
+           ../../qmlcomponents/src/graph/noisynode.h \
 
-RESOURCES += $$RCC_DIR/main.qrc
+RESOURCES += $$RCC_DIR/main.qrc \
+            ../../qmlcomponents/shaders/shaders.qrc
 
 OTHER_FILES += resource/main.qml \
                ../../qmlcomponents/views/PersistentGraphView.qml \
-               prebuild.sh
+               prebuild.sh \
+               ../../qmlcomponents/shaders/line.vsh \
+               ../../qmlcomponents/shaders/line.fsh \
 
